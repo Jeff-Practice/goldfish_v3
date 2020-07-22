@@ -1,0 +1,423 @@
+/*#region Common */
+
+*{
+    outline: 1px red solid;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.full{
+    width: 100%;
+}
+
+.hidden-title{
+    font-size: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #f39787;
+}
+
+.arrow-group{
+
+}
+
+.arrow-product-group{
+    float: right;
+}
+
+.arrow{
+    font-size: 16px;
+}
+
+.arrow-group-split{
+}
+
+.arrow-group-split .arrow-prev{
+    position: relative;
+}
+
+.arrow-group-split .arrow-prev::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 17px;
+    width: 1px;
+    background-color: black;
+}
+
+.arrow-prev{
+    padding-right: 15px;
+}
+
+.arrow-next{
+    padding-left: 15px;
+}
+
+.content-group{
+    position: relative;
+}
+
+.content-box{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 198px;
+}
+
+.block-title{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+h2{
+    font-size: 26px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+}
+
+footer{
+    background: #f2f2f2;
+}
+
+/*#endregion Common */
+
+/*#region Header */
+
+.header{
+    /* sitcky沒效果? */
+    position: sticky;
+}
+
+.logo{
+    float: left;
+    line-height: 116px;
+}
+
+.logo img{
+    vertical-align: middle;
+}
+
+.header-icon-list{
+    float: right;
+    line-height: 116px;
+}
+
+.head-icon-list-item{
+    display: inline-block;
+}
+
+.head-icon-list-item + .head-icon-list-item{
+    margin-left: 30px;
+}
+
+nav{
+    text-align: center;
+    margin: auto 0;
+}
+
+/* 我喜歡完整性一點、不能保證看的人都熟... */
+nav ul li{
+    display: inline-block;
+    line-height: 116px;
+}
+
+nav li ~ li{
+    margin-left: 30px;
+}
+
+/*#endregion Header */
+
+/*#region main-block */
+
+.slide{
+    float: left;
+}
+
+.main-content-box{
+}
+
+.main-content-group{
+    display: block;
+    float: right;
+}
+
+.main-content-group h3{
+    width: 150px;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+
+.main-content-group+.main-content-group{
+    margin-top: 30px;
+}
+
+.shop-link{
+    margin-top: 15px;
+    color: orange;
+}
+
+/*#endregion main-block */
+
+/*#region service */
+
+.service-list{
+    font-size: 0;
+}
+
+.service-list-item{
+    float: left;
+    position: relative;
+}
+
+.service-list-item-group{
+    width: 300px;
+    display: block;
+}
+
+.service-list-item img{
+    vertical-align: baseline;
+    padding-left: 15px;
+}
+
+.service-list-item+.service-list-item{
+    display: inline-block;
+}
+
+.service-list-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+    width: 1px;
+    background-color: black;
+}
+
+.service-list-item-group h3,p{
+    width: 100%;
+    display: inline-block;
+}
+
+.service-list-item-group h3{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 26px;
+    color: black;
+}
+
+.service-list-item-group p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #939393;
+    line-height: 18px;
+}
+
+.service-list-item-group:hover h3{
+    color: #f39787;
+}
+
+.service-content{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+/*#endregion service */
+
+/*#region Product-List */
+
+.product-link-list{
+    float: right;
+    margin-right: 30px;
+}
+
+.product-link-list-item{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.link-active{
+    color: #f39787;
+}
+
+.product-list-item{
+    float: left;
+}
+
+.product-list-item + .product-list-item{
+    margin-left: 30px;
+}
+
+.product-item-card{
+    position: relative;
+}
+
+.rate-list{
+    font-size: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rate-list-item{
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rate-list-item + .rate-list-item{
+    padding-left: 3px;
+}
+
+.rate-active{
+    color: rgb(233, 215, 52);
+}
+
+.product-link{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.discount{
+    color: red;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.dollar::before{
+    content: '$';
+}
+
+.news-tag{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: black;
+}
+
+ins{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+del{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #999;
+}
+
+/*#endregion Product-List */
+
+/*#region irregular-block */
+
+/* 好像真的沒辦法全用Float left硬做 */
+/* 而且這樣做感覺未來維護的人會殺了我 */
+.irregular-item{
+    position: relative;
+    float: left;
+}
+
+.irregular-block .irregular-item:nth-child(2){
+    margin-bottom: 30px;
+}
+
+.irregular-block .irregular-item:nth-child(3){
+    margin-bottom: 30px;
+    float: right;
+}
+
+.irregular-block .irregular-item:nth-child(4){
+    float: right;
+}
+
+.irregular-block .irregular-item:nth-child(4) .product-content{
+    top: unset;
+    left: unset;
+    right: 15px;
+    bottom: 15px;
+}
+
+.irregular-block .irregular-item:nth-child(5){
+    margin-right: 30px;
+}
+
+
+
+.product-content{
+    text-align: center;
+    background-color: white;
+    height: 50px;
+}
+
+.product-content span{
+    color: #f39787;
+}
+
+.product-content h3{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*#endregion irregular-block */
+
+/*#region hover-block */
+
+/*#endregion hover-block */
+
+/*#region icon-block */
+
+.icon-block{
+    position: relative;
+    font-size: 0;
+}
+
+.icon-item{
+    display: inline-block;
+    padding: 15px 40px;
+}
+
+.icon-block-prev{
+    line-height: 117px;
+    position: absolute;
+}
+
+.icon-block-next{
+    line-height: 117px;
+    right: 0;
+    position: absolute;
+}
+
+/*#endregion icon-block */
+
