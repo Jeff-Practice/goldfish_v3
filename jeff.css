@@ -1,7 +1,7 @@
 /*#region Common */
 
 *{
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
 }
 
 .wrap{
@@ -166,6 +166,7 @@ nav li ~ li{
     font-size: 20px;
     font-weight: 500;
     letter-spacing: .4px;
+    color: black;
 }
 
 .main-content-group+.main-content-group{
@@ -204,11 +205,11 @@ nav li ~ li{
     display: inline-block;
 }
 
-.service-list-item::before{
+.service-list-item+.service-list-item ::before{
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 44px;
     width: 1px;
     background-color: black;
@@ -512,3 +513,99 @@ address span ~ span {
 }
 
 /*#endregion footer*/
+
+/*#region subscribe-block */
+
+.subscribe-block{
+    font-size: 0;
+    border-bottom: 1px black solid;
+}
+
+.subscribe-block img{
+    vertical-align: middle;
+}
+
+.subscribe-block h2{
+    display: inline-block;
+    width: 300px;
+    line-height: 48px;
+}
+
+.input-mail-group{
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    vertical-align: top;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.input-item{
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.input-mail-group label{
+    font-size: 12px;
+}
+
+.input-mail-group input{
+    width: 562px;
+    font-size: 22px;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.btn-submit{
+    box-sizing: content-box;
+    background-color: #f39787;
+    height:26px;
+    width: 26px;
+    margin: 0px;
+}
+/*#endregion subscribe-block*/
+
+/*#region copyright */
+.paytype-list{
+    text-align: center;
+    font-size: 0;
+    padding-bottom: 15px;
+}
+.paytype-list-itme{
+    display: inline-block;
+}
+
+.paytype-list-itme + .paytype-list-itme{
+    margin-left: 10px;
+}
+.page-link-list{
+    text-align: center;
+}
+
+.page-link-list-item{
+    display: inline-block;
+    position: relative;
+}
+
+.page-link-list-item + .page-link-list-item{
+    margin-left: 30px;
+}
+
+.page-link-list-item+.page-link-list-item ::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    top: 0;
+    left: -15px;
+    background-color: black;
+}
+
+.copywrite-link{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+}
+/*#endregion copyright*/
