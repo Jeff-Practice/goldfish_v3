@@ -421,3 +421,94 @@ del{
 
 /*#endregion icon-block */
 
+/*#region footer */
+
+.footer-list{
+}
+
+.footer-list-item{
+    float: left;
+    width: 277.5px;
+}
+
+.footer-list-item + .footer-list-item{
+    margin-left: 30px;
+}
+
+.footer-list-item h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+address span {
+    display: block;
+}
+
+address span ~ span {
+    margin-top: 15px;
+}
+.footer-item{
+
+}
+.footer-item ~ .footer-item {
+    margin-top: 15px;
+}
+
+.contact {
+    margin-left: 20px;
+    position: relative;
+}
+
+.contact img{
+    position: absolute;
+    top: 0;
+    left: -17px;
+}
+
+.contact span{
+    margin-left: 5px;
+}
+
+.footer-link-list-item{
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.customer-response-list{
+    font-size: 0;
+}
+.customer-response-list img{
+    vertical-align: baseline;
+}
+
+.customer-response-list p{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 231px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+
+    padding-left: 5px;
+}
+.customer-response-list a{
+    display: block;
+    box-sizing: border-box;
+    width: 231px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    
+    padding-left: 5px;
+    margin-left: auto;
+}
+
+/*#endregion footer*/
