@@ -559,11 +559,23 @@ address span ~ span {
 }
 
 .btn-submit{
+    position: relative;
     box-sizing: content-box;
     background-color: #f39787;
     height:26px;
     width: 26px;
     margin: 0px;
+
+}
+
+.input-mail-group ::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 1px;
+    height: 44px;
+    background-color: black;
 }
 /*#endregion subscribe-block*/
 
