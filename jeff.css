@@ -264,6 +264,7 @@ nav li ~ li{
 
 .product-list-item{
     float: left;
+    position: relative;
 }
 
 .product-list-item + .product-list-item{
@@ -394,6 +395,55 @@ del{
 /*#endregion irregular-block */
 
 /*#region hover-block */
+
+
+
+.product-content-group{
+    opacity: 0;
+}
+
+.product-list-item:hover .product-content-group{
+    opacity: 1;
+    transition: opacity 0.5s;    
+}
+
+.btn-group{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-group button{
+    height: 45px;
+    width: 45px;
+    background-color: #f39787;
+}
+
+.btn-group button + button{
+    margin-left: 30px;
+}
+.product-content-text{
+    padding: 15px;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    background-color: white;
+}
+
+.product-content-text time{
+    color: #f39787;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.product-content-text p{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
 
 /*#endregion hover-block */
 
